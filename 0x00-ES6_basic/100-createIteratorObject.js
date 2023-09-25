@@ -1,3 +1,4 @@
+
 export default function createIteratorObject(report) {
   const departments = Object.values(report.allEmployees);
 
@@ -27,3 +28,4 @@ export default function createIteratorObject(report) {
     },
   };
 }
+

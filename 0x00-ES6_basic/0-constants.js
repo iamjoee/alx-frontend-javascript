@@ -1,16 +1,16 @@
-export function taskFirst() {
-  const task = 'I prefer const when I can.'; // Use const for variables that won't be reassigned.
-  return task;
+export function getTaskDescription() {
+  const taskDescription = 'I prefer using constants whenever possible.';
+  return taskDescription;
 }
 
-export function getLast() {
-  return ' is okay';
+export function getFallbackMessage() {
+  return 'However, sometimes using let is necessary.';
 }
 
-export function taskNext() {
-  let combination = 'But sometimes let'; // Use let when you intend to reassign the variable.
-  combination += getLast();
+export function getTaskSummary() {
+  let taskSummary = 'For instance, when ';
+  taskSummary += 'the value of a variable needs to be updated.';
+  taskSummary += ' ' + getFallbackMessage();
 
-  return combination;
+  return taskSummary;
 }
-

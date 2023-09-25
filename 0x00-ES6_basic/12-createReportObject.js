@@ -1,3 +1,4 @@
+
 export default function createReportObject(employeesList) {
   const allEmployees = {};
   
@@ -12,3 +13,4 @@ export default function createReportObject(employeesList) {
     }
   };
 }
+
