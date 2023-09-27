@@ -1,12 +1,10 @@
-export default function guardrail(mathFunction) {
-  const queue = [];
-
+export default function divideFunction(numerator, denominator) {
   try {
-    queue.push(mathFunction());
-  } catch (err) {
-    queue.push(err.toString());
-  } finally {
-    queue.push("Guardrail was processed");
+    if (denominator === 0) {
+      throw new Error();
+    }
+    return numerator / denominator;
+  } catch (error) {
+    throw Error('cannot divide by 0');
   }
-  return queue;
 }
