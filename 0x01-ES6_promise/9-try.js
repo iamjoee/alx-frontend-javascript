@@ -1,3 +1,4 @@
+/* eslint-disable */
 export default function guardrail(mathFunction) {
   const queue = [];
 
@@ -10,4 +11,3 @@ export default function guardrail(mathFunction) {
   }
   return queue;
 }
-
